@@ -12,7 +12,7 @@ def get_connection():
     return mysql.connector.connect(
         host="localhost",
         user="root",
-        password="Anshu@44066",
+        password="Anas1234",
         database="CareerWings"
     )
 
@@ -144,3 +144,4 @@ elif choice == "View Users":
               st.dataframe(df, use_container_width=True)
             else:
               st.info("No users registered yet.")
+
