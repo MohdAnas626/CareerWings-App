@@ -1,6 +1,6 @@
 # CareerWings-App
 
-ANAS:
+Anas:
 CreerWings.py
 
 Haadi:
