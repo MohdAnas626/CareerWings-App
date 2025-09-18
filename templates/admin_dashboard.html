@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Admin Dashboard</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            display: flex;
+            height: 100vh;
+        }
+        .sidebar {
+            width: 220px;
+            background: #333;
+            color: white;
+            display: flex;
+            flex-direction: column;
+            padding-top: 20px;
+        }
+        .sidebar a {
+            color: white;
+            padding: 12px;
+            text-decoration: none;
+            display: block;
+        }
+        .sidebar a:hover {
+            background: #444;
+        }
+        .main {
+            flex: 1;
+            padding: 20px;
+            background: #f4f4f9;
+        }
+        h1 { color: #333; }
+    </style>
+</head>
+<body>
+    <div class="sidebar">
+        <h2 style="text-align:center;">Admin</h2>
+        <a href="#">Overview</a>
+        <a href="#">Manage Careers</a>
+        <a href="#">Manage Skills</a>
+        <a href="#">Manage Users</a>
+        <a href="{{ url_for('admin_logout') }}">Logout</a>
+    </div>
+
+    <div class="main">
+        <h1>Welcome Admin 🚀</h1>
+        <p>This is your dashboard. Choose an option from the sidebar.</p>
+    </div>
+</body>
+</html>
